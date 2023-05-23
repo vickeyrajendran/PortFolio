@@ -1,2 +1,2 @@
 # PortFolio
-https://vickeyrajendran.github.io/PortFolio/
+https://vickeyrajendran.github.io/Portfolio/
