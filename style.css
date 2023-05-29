@@ -76,7 +76,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/Portfolio/images/vikki.png)no-repeat;
+    background: url(/images/vikki.png)no-repeat;
     background-size:auto 80%;
     background-position: 85% center;  
 }
