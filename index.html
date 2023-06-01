@@ -36,7 +36,7 @@
             <span class="animate" style="--i:6"></span> </p>
         
         <div class="btn-box">
-            <a href="" class="btn">Hire me</a>
+            <a href="/images/VIGNESH RESUME.pdf" download=""  class="btn">Hire me</a>
             <a href="#contact" class="btn">Lets talk</a>
             <span class="animate" style="--i:7"></span>
         </div>
@@ -45,6 +45,8 @@
             <a href="https://www.facebook.com/vic.key.737"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.linkedin.com/in/vignesh-rajendran-636386169/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/vickeyrajendran"><i class='bx bxl-github'></i></a>
+            <a href="https://wa.me/9159643822"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class='bx bx-envelope' ></i></a>
             <span class="animate" style="--i:8"></span>        
         </div>
         <div class="home-imgHover"></div>
@@ -180,32 +182,32 @@
     </section>
         <!-- contact section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!<span class="animate scroll" style="--i:1"></span></span></h2>
-        <form action="#">
+        <h2 class="heading">Contact <span>Me!<span class="animate scroll" style="--i:1"></span></span></h2> 
+        <form name="submit-to-google-sheet" >
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full name" required>
+                    <input type="text" name="Name" placeholder="Full name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="Email" placeholder="Email" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:3"></span>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile number" required>
+                    <input type="number" name="Mobilenumber" placeholder="Mobile number" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email subject" required>
+                    <input type="text" name="Emailsubject" placeholder="Email subject" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:5"></span>
              </div>
                 <div class="textarea-field">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <span class="focus"></span>
                     <span class="animate scroll" style="--i:7"></span>
                 </div>
@@ -214,6 +216,7 @@
                 <span class="animate scroll" style="--i:9"></span>
             </div>
         </form>
+        <span id="msg"></span>
     </section>
           <!-- footer design -->
 <footer class="footer">
@@ -225,5 +228,23 @@
     </div>
 </footer>
 <script src="script.js"></script>
+      <!-- Contactform googlesheet js codes -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxX18zNiBTkZ5u3_EgMYMRjxef2rXfBJnvaOP2049CoBPftVVJAaPL_nkgQc6fNhvqkSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
