@@ -597,7 +597,7 @@ width: 100%;
                 /* BREAK POINTS */
 @media (max-width:1200px){
     html{
-        font-size: 55%;
+        font-size: 35%;
     }
 }
 @media (max-width:991px){
@@ -754,5 +754,4 @@ width: 100%;
     margin-left: 630px;
     display: flex;
     font-size: 20px;
-
    }     
