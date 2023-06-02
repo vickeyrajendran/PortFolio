@@ -578,11 +578,19 @@ width: 100%;
     color: var(--main-color);
 }
                 /* BREAK POINTS */
-/* @media (max-width:1200px){
+@media (max-width:1200px){
     html{
         font-size: 35%;
     }
-} */
+    .home{
+        display: flex;
+        align-items: center;
+        padding: 0 9%;
+        background: url(/images/vk.png)no-repeat;
+        background-size:auto 80%;
+        background-position: 85% center;  
+    }
+}
 @media (max-width:991px){
     .header{
         padding: 2rem 4%;
@@ -606,7 +614,7 @@ width: 100%;
         display: block;
     }
     .home{
-        background: #060a26;
+        background: var(--bg-color);
     }
     .contact {
         padding: 50px; /* Adjust the padding as needed */
