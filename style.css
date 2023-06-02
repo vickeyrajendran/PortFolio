@@ -608,16 +608,21 @@ width: 100%;
     .home{
         background: var(--bg-color);
     }
-    .contact {
-        padding: 50px; /* Adjust the padding as needed */
-      }
-      .input-field {
+    .home-sci {
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        
+    }
+     .contact { 
+        padding: 50px; 
+      } 
+       .input-field {
         width: 100%; /* Take up full width */
-        margin-bottom: 20px; /* Add some spacing between input fields */
-      }
-      .input-box {
-        flex-direction: column; /* Display input fields in a column */
-      }
+        margin-bottom: 20px; /*Add some spacing between input fields */
+       } 
+       .input-box {
+        flex-direction: row; /* Display input fields in a column */
+       }
     .navbar{
         position: absolute;
         top: 100%;
@@ -655,13 +660,9 @@ width: 100%;
         font-size: 2rem;
         margin: 3rem 0;
     }
-    .home-sci a{
-        font-size: 20px;
-    }
+   
    
 }
-
-
             /* Animations */
 @keyframes homeBgText{
     0%,
