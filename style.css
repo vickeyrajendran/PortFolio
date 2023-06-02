@@ -622,9 +622,9 @@ width: 100%;
     #menu-icon{
         display: block;
     }
-    .home{
+    /* .home{
         background: #060a26;
-    }
+    } */
     .navbar{
         position: absolute;
         top: 100%;
