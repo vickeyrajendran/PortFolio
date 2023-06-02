@@ -76,8 +76,8 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/images/vk.png); 
-    background-size:auto 80%;
+    background: url(/images/vk.png)no-repeat; 
+    /* background-size:auto 80%; */
     background-position: 85% center;  
 }
 .home-content{
