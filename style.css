@@ -611,11 +611,6 @@ width: 100%;
     .contact {
         padding: 50px; /* Adjust the padding as needed */
       }
-      
-      .input-box {
-        flex-direction: column; /* Display input fields in a column */
-      }
-      
       .input-field {
         width: 100%; /* Take up full width */
         margin-bottom: 20px; /* Add some spacing between input fields */
