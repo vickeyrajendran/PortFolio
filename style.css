@@ -578,11 +578,11 @@ width: 100%;
     color: var(--main-color);
 }
                 /* BREAK POINTS */
-@media (max-width:1200px){
+/* @media (max-width:1200px){
     html{
         font-size: 35%;
     }
-}
+} */
 @media (max-width:991px){
     .header{
         padding: 2rem 4%;
@@ -616,7 +616,7 @@ width: 100%;
         margin-bottom: 20px; /* Add some spacing between input fields */
       }
       .input-box {
-        flex-direction: row; /* Display input fields in a column */
+        flex-direction: column; /* Display input fields in a column */
       }
     .navbar{
         position: absolute;
