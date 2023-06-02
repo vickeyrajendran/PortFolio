@@ -18,7 +18,7 @@
     --i:1;
 }
 html {
-    font-size: 42.5%;
+    font-size: 44.5%;
     overflow-x: hidden;
 }
 body{
@@ -477,23 +477,6 @@ transition: .5s;
     margin:0 auto;
     text-align:center;
 }
-.contact-icons{
-    display: flex;
-    flex-direction: row;
-    font-size: 40px;
-    padding-left: 30px;
-}
-
-.contact-left{
-    font-size: medium;
-    font-weight: 500;
-    width: 400px;
-    margin-top: 40px;
-}
-.contact-left p{
-    margin:20px auto 30px auto;
-    padding-left: 40px;
-}
 .contact form .input-box{
     position: relative;
     display: flex;
@@ -622,9 +605,9 @@ width: 100%;
     #menu-icon{
         display: block;
     }
-    /* .home{
+    .home{
         background: #060a26;
-    } */
+    }
     .navbar{
         position: absolute;
         top: 100%;
