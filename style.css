@@ -76,7 +76,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/images/vk.png)no-repeat;
+    background: url(/images/vk.png); 
     background-size:auto 80%;
     background-position: 85% center;  
 }
@@ -581,14 +581,6 @@ width: 100%;
 @media (max-width:1200px){
     html{
         font-size: 35%;
-    }
-    .home{
-        display: flex;
-        align-items: center;
-        padding: 0 9%;
-        background: url(/images/Vk_dp-neww.png)no-repeat;
-        background-size:auto 80%;
-        background-position: 85% center;  
     }
 }
 @media (max-width:991px){
